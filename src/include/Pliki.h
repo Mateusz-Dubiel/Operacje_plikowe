@@ -6,7 +6,7 @@
 
 using namespace std;
 
-string text(string nazwa_pliku)
+vector <string> fileVector(string nazwa_pliku)
 {
     fstream plik;
     plik.open("p.txt",ios::in);
@@ -15,6 +15,17 @@ string text(string nazwa_pliku)
     while(plik>>temp)
     {
         znaki.push_back(temp);
+    }
+    return znaki;
+}
+
+void fileSaveVector(vector <string> saveFrom, string FileName)
+{
+    fstream file;
+    file.open("p.txt",ios::out);
+    for(int i(0); i<int(saveFrom.size());i++)
+    {
+        file << saveFrom[i] << endl;
     }
 }
 
