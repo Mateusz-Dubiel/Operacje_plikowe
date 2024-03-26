@@ -9,5 +9,4 @@ int main()
 {   
     vector<string> myV={"ala", "ma", "kota"};
     fileSaveVector(myV, "p.txt");
-    cout << myV;
 }

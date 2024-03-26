@@ -29,4 +29,10 @@ void fileSaveVector(vector <string> saveFrom, string FileName)
     }
 }
 
+class Osoba
+{
+    public:
+    string imie, nazwisko;
+};
+
 #endif /* DEC9B4EB_B4D0_45D6_8665_CDDEC5C5F3AB */
